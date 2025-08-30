@@ -18,9 +18,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
-  min-height: 100%;
-  min-width: 100%;
+  z-index: -1; 
 }
 
 /* Overlay video */
@@ -29,6 +27,49 @@ body {
   z-index: 1;
   color: rgb(255, 255, 255);
 }
+.header {
+
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: space-evenly;
+    width: 100%;
+    
+   
+    
+    
+}
+.header ul {
+    list-style-type :none;
+    overflow  :hidden;
+    justify-content :space-evenly;
+
+    
+}
+.header li {
+    float: left;
+    justify-content: space-evenly;
+    padding: 14px 16px;
+   border-top: 1px solid rgb(118, 116, 116);
+     border-bottom: 1px solid rgb(118, 116, 116);
+
+}
+.header li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bolder;
+    text-transform: uppercase;
+   
+    
+}
+.header-main ul :hover{
+    color: rgb(239, 208, 54);
+    cursor: pointer;
+}
+
 
 /* Top header */
 .header {
@@ -78,6 +119,8 @@ hr {
   padding: 12px 40px;
   flex-wrap: wrap;
   gap: 10px;
+  border-bottom: 1px solid #ffffff;
+  background-color: #1d1c1c;
 }
 
 .nav-left, .nav-right {
@@ -116,12 +159,13 @@ hr {
 }
 
 .center-text h1 {
-  font-size: 32px;
+  font-size: 40px;
   font-weight: bold;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
 
 /* Page 2  */
+/* about */
 .about-section {
   background-color: #1d1c1c;
   padding: 50px 0; 
@@ -169,15 +213,252 @@ hr {
   height: auto;
   object-fit: cover;   
   border-radius: 6px;
-  max-height: 350px;
+}
+/* menu */
+.menu1 {
+    background-image: url('https://kababjees.com/images/back1.jpg');
+    opacity: 10;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+.headings {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .headings h1 {
+            color: white;
+            font-size: 40px; 
+            font-weight: bold; 
+            margin-bottom: 10px;
+        }
+        
+
+        .hr1 {
+            width: 80px; 
+            border: none; 
+            border-top: 3px solid #dcb658; 
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .headings p {
+            font-size: 18px; 
+            color: white; 
+            font-style: italic; 
+        }
+.menu-card {
+    width: 100%; 
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
+.menu-img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ccc;
+}
+
+.btnn {
+    background-color: #dcb658;
+    color: #444034;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.btnn:hover {
+    background-color: #cba146;
+}
+
+/* location */
+.header-location{
+
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: space-evenly;
+    width: 100%;
+    
+    background-color: black;
+}
+.header-location ul {
+    list-style-type :none;
+    overflow  :hidden;
+    justify-content :space-evenly;
+
+    
+}
+.header-location li {
+    float: left;
+    justify-content: space-evenly;
+    padding: 14px 16px;
+   border-top: 1px solid rgb(118, 116, 116);
+     border-bottom: 1px solid rgb(118, 116, 116);
+
+}
+.header-location li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bolder;
+    text-transform: uppercase;
+   
+    
+}
+.header-location ul :hover{
+    color: rgb(239, 208, 54);
+    cursor: pointer;
+}
+.bdy{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+    padding: 5px;
+}
+
+/* location images */
+.img-main{
+    display: flex;
+    flex-direction: row; 
+    width: 100%;
+    background-color: black;
+    flex-wrap: wrap;
+    align-items: flex-start;
+   
+
+}
+.card-img-top{
+    width: 250px;
+    height: 210px;
+     border-radius: 30px;
+    transition: transform 0.6s ease, width 1s, height 1s ;
+    margin: 10px;
+    padding: 20px;
+  
+}
+.card-img-top:hover{
+  
+    
+    cursor: pointer;
+    width: 260px;
+    height: 230px;
+    border-radius: 0%;
+}
+.card-body{
+    color: rgb(239, 208, 54);
+    font-size: 30px;
+}
+.card-body .bx{
+    color: red;
+}
+
+/* bank dis css */
+.header-main-bk{
+ background-image: url(kb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+     width: 100%;
+    height: 500px;
+    opacity: 0.;
+    
+   
+}
+.call{
+background-color: rgb(31, 30, 30);
+ display: flex;
+ flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+#call {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(129, 128, 128);
+    padding: 10px;
+    margin: 0;
+   
+}
+#numb{
+    color: rgb(237, 206, 93);
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+}
+button  {
+    background-color: rgb(237, 206, 93);
+    height: 40px;;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    
+
+    
+}
+.bk-images {    
+
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-evenly;
+
+
+}
+.bk-images img{
+    width: 550px;
+    height: 550px;
+    margin: 20px;
+    
+}
+.bk-images-main img{
+    width: 350px;
+    height: 350px;
+    margin: 20px;
+    
+}
+#bank{
+    
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+.bank-dis{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRklI_pGa_jkYCuJQCMK7V-EvlemdNnZXte_g&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /*   RESPONSIVE   */
+
 @media (max-width: 992px) {
   .navbar {
     flex-direction: column;
     gap: 15px;
-    justify-content: center;
   }
 
   .nav-left, .nav-right {
@@ -197,11 +478,6 @@ hr {
     font-size: 26px;
     margin-top: 150px;
   }
-
-  .footer-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -209,7 +485,6 @@ hr {
     flex-direction: column;
     text-align: center;
     padding: 10px 20px;
-    justify-content: center;
   }
 
   .header .left, 
@@ -256,13 +531,9 @@ hr {
     font-size: 13px;
   }
 
-  .center-text {
-    margin-top: 60px;
-    padding: 0 10px;
-  }
-
   .center-text h1 {
     font-size: 18px;
+    margin-top: 100px;
   }
 
   .about-text h2 {
@@ -272,14 +543,12 @@ hr {
   .about-text p {
     font-size: 13px;
   }
-
-  .footer-container {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
 }
 
-/* Footer */
+
+
+/* contact page */
+
 .footer {
   background: url('https://kababjees.com/images/sac1.jpg') no-repeat center center/cover;
   position: relative;
